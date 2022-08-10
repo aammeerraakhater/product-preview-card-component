@@ -21,7 +21,7 @@ Your users should be able to:
 
 ## Got feedback for me?
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email aammeerraakhater@gmail.com
+I love receiving feedback! I'm always looking to improve my answer and my skills. So if you have anything you'd like to mention, please email me: aammeerraakhater@gmail.com
 
 **AA** 🚀
 # product-preview-card-component
