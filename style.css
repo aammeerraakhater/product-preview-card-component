@@ -1,0 +1,105 @@
+:root{
+--DarkCyan: hsl(158, 36%, 37%);
+--veryDarkCyan: hsl(158, 36%, 27%);
+--Cream: hsl(30, 38%, 92%);
+--VeryDarkBlue: hsl(212, 21%, 14%);
+--DarkGrayishBlue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+--primary-font-size:2rem;
+--secondary-font-size:0.875rem;
+--small-font-size:0.75rem;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Cream);
+    font-weight: 500;
+    font-family: 'Fraunces', serif;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    font-size: var(--secondary-font-size);
+    gap:1rem;/*what is that*/
+
+    line-height: 1.5;
+}.category{
+    font-size: var(--primary-font-size);
+
+}
+.product-name{
+    font-weight: 700;
+    font-size: var(--primary-font-size);
+    font-family: 'Montserrat', serif ;
+}
+.main-body{
+    display: flex;
+    flex-flow: column nowrap;
+    max-width:375px;
+    margin:auto;
+    border-radius: 10px;
+    background-color: var(--White);
+    overflow: hidden;
+    margin-top: 75px;
+    text-align: left;
+}
+.txt{
+    padding:20px;
+
+}
+img,picture{
+    width:100%;
+    display: block;
+}
+.prices{
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0 1rem;
+}
+.oldPrice,.description,.category{
+    color:var(--DarkGrayishBlue);
+}
+.oldPrice{
+    text-decoration: line-through;
+}
+.newPrice{
+    color:var(--DarkCyan);
+    font-weight: 700;
+    font-size: var(--primary-font-size);
+    margin-right: 1rem;
+}
+.add{
+    width:100%;
+    background-color: var(--DarkCyan);
+    color: var(--White);
+    font-weight: 700;
+    font-size: var(--secondary-font-size);
+    border: none;
+    padding:15px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.add:hover{
+    background-color: var(--veryDarkCyan);
+}
+@media all and (min-width:600px) {
+    .main-body{
+        max-width:575px;
+        flex-flow: row nowrap; /*why no wrap*/
+    }
+    .img{
+        flex:1 1 50%;
+    }
+    .txt{
+        flex: 1 1 50%;
+    }
+    .add{
+        margin-bottom: 0;
+    }
+}
